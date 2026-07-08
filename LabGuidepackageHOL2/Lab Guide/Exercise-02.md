@@ -245,7 +245,7 @@ Contoso needs to see at a glance which cities beat, met, or missed the sales tar
    - **Values > Satisfactory**: `9000` (below = on-target, above = good)
    - **Values > Maximum**: `10000`
 
-   ![](./Images/e2t4s29.png)
+   ![](./Images/e1ss29.png)
 
 6. Save the report. Each Contoso city now shows a compact bar-plus-target-plus-bands indicator that reads at a glance.
 
