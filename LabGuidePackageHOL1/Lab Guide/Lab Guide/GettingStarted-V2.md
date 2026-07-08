@@ -1,5 +1,7 @@
 # Getting Started: Build Your First Store Performance Report in Power BI Desktop
 
+### Overall Estimated Duration: 4 Hours
+
 ## Scenario
 
 You are a new business analyst for a fictional retail chain. Your manager has provided four CSV files that describe sales transactions, store details, product information, and dates. In this lab, you will use Power BI Desktop on a Windows Lab VM to load the CSV files, shape the data, create a simple model, build a one-page store performance dashboard, and write your first beginner DAX measures.
