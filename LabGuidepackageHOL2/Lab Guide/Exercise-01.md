@@ -4,7 +4,7 @@
 
 ## 📘 Scenario
 
-The **StorePerformanceReport** — a pre-built `.pbix` file provided in your lab environment — currently lives only in Power BI Desktop on your lab machine. Contoso Retail's leadership team wants this report available in the cloud — viewable from any device, summarized in a single executive dashboard, shared with the right people at the right permission level, and refreshed automatically every day.
+The **StorePerformanceReport**, a pre-built `.pbix` file provided in your lab environment, currently lives only in Power BI Desktop on your labVM. Contoso Retail's leadership team wants this report available in the cloud, viewable from any device, summarized in a single executive dashboard, shared with the right people at the right permission level, and refreshed automatically every day.
 
 In this exercise, you will move your report to the Power BI Service and make it available to your audience: you will publish the report and its semantic model, build a dashboard from its key visuals, review the three primary sharing methods, and configure scheduled refresh.
 
@@ -13,7 +13,7 @@ In this exercise, you will move your report to the Power BI Service and make it 
 In this exercise, you will complete the following tasks:
 
 - Task 1: Launch the environment and open your working report
-- Task 2: Power BI Service – Creating a Workspace
+- Task 2: Create a Workspace
 - Task 3: Publish from Power BI Desktop to the Power BI Service
 - Task 4: Build a dashboard from report tiles
 - Task 5: Configure sharing (workspace roles, apps, links)
@@ -25,10 +25,9 @@ In this exercise, you will complete the following tasks:
 
 ## Task 1: Launch the environment and open your working report
 
-In this task, you will open Power BI Desktop on the lab virtual machine and load the pre-built StorePerformanceReport provided for this lab. Verifying the report opens cleanly is an important checkpoint before publishing — any broken visuals or data errors will be carried into the Power BI Service.
+In this task, you will open Power BI Desktop on the lab virtual machine and load the pre-built StorePerformanceReport provided for this lab. Verifying the report opens cleanly is an important checkpoint before publishing - any broken visuals or data errors will be carried into the Power BI Service.
 
-1. On the edge browser, click on new tab and paste below link to download the file.
-`https://experienceazure.blob.core.windows.net/templates/powerbi-training/Assets/StorePerformanceReport.pbix`
+1. On the edge browser, click on new tab and paste below link to download the file. `https://experienceazure.blob.core.windows.net/templates/powerbi-training/Assets/StorePerformanceReport.pbix`
 
    ![](./Images/images/exercise-1/e1s1.png)
 
@@ -42,13 +41,13 @@ In this task, you will open Power BI Desktop on the lab virtual machine and load
 
 1. Once the "Enter your email address" dialog appears, copy the **Username** and paste it into the **Email** field of the dialog and select **Continue**.
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject>
+   * **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
      ![](./Images/images/exercise-1/L2E1T1S3.png) 
 
 1. After clicking Continue, you will be prompted to sign in again. Use the credentials provided below to sign in, and then click **Next (2)** to proceed.
 
-   * **Email/Username**: <inject key="AzureAdUserEmail"></inject> **(1)**
+   * **Email/Username:** <inject key="AzureAdUserEmail"></inject> **(1)**
 
      ![](./Images/images/exercise-1/L2E1T1S4.png)
 
@@ -58,11 +57,11 @@ In this task, you will open Power BI Desktop on the lab virtual machine and load
 
      ![02](./Images/images/exercise-1/L2E1T1S5.png)
 
-1. For the pop-up **Automatically sign in to all desktop apps and websites on this device?** window, select **No,this app only**
+1. For the pop-up **Automatically sign in to all desktop apps and websites on this device?** window, select **No, this app only**
 
    ![02](./Images/images/exercise-1/L2E1T1S6.png)
 
-1. On the **Power BI free license assigned** window, click on **Ok**.
+1. On the **Power BI free license assigned** window, click on **OK**.
 
    ![](./Images/images/exercise-1/L2E1T1S7.png)
 
@@ -84,11 +83,11 @@ In this task, you will open Power BI Desktop on the lab virtual machine and load
 
    ![](./Images/images/exercise-1/e1s4.png)
 
-## Task 2: Power BI Service – Creating a Workspace
+## Task 2: Create a Workspace
 
 In this task, you will create a workspace in the Power BI Service.
 
-1. Navigate back toedge browser, and open power bi tab.
+1. Navigate back to the Edge browser and open the Power BI tab.
 
 1. In the left-hand navigation pane of the Power BI interface, select **Workspaces** to view and manage your available workspaces.
    
@@ -114,7 +113,7 @@ In this task, you will create a workspace in the Power BI Service.
     
 ## Task 3: Publish from Power BI Desktop to the Power BI Service
 
-In this task, you will publish your report — and the semantic model behind it — from Power BI Desktop into a workspace in the Power BI Service. Publishing is the moment your report stops being a local file and becomes a shared cloud asset.
+In this task, you will publish your report - and the semantic model behind it - from Power BI Desktop into a workspace in the Power BI Service. Publishing is the moment your report stops being a local file and becomes a shared cloud asset.
 
 1. In Power BI Desktop, verify from the top-right corner of the window that you are signed in with your organizational account:
 
@@ -147,15 +146,15 @@ In this task, you will publish your report — and the semantic model behind it 
 1. Verify that the workspace now contains **both** of the following items:
 
    - The **StorePerformanceReport** (Type: Report)
-   - The **StorePerformanceReport** semantic model (T    ype: Semantic model)
+   - The **StorePerformanceReport** semantic model (Type: Semantic model)
 
       ![](./Images/images/exercise-1/e1s10.png)
 
-   > **Note**: The semantic model is published automatically alongside the report. It holds the data, relationships, and measures, and is the object you will configure for scheduled refresh in Task 6.
+   > **Note:** The semantic model is published automatically alongside the report. It holds the data, relationships, and measures, and is the object you will configure for scheduled refresh in Task 6.
 
 ## Task 4: Build a dashboard from report tiles
 
-In this task, you will create a consolidated executive view by pinning key report visuals to a new dashboard. Unlike a report, a dashboard is a single-page canvas that can combine tiles from multiple reports — ideal for at-a-glance monitoring by leadership.
+In this task, you will create a consolidated executive view by pinning key report visuals to a new dashboard. Unlike a report, a dashboard is a single-page canvas that can combine tiles from multiple reports - ideal for at-a-glance monitoring by leadership.
 
 1. In the Power BI Service, from the workspace, open the **StorePerformanceReport** (Type: Report).
 
@@ -169,7 +168,7 @@ In this task, you will create a consolidated executive view by pinning key repor
 
    ![](./Images/images/exercise-1/e1s13.png)
 
-1. In the **Pin to dashboard** window, select **New dashboard (1)** and enter the following name **(2)**, then click **Pin (3)**:
+1. In the **Pin to dashboard** window, select **New dashboard (1)** and enter the following name **(2)**, then click **Pin (3):**
 
    ```
    Executive Dashboard
@@ -181,7 +180,7 @@ In this task, you will create a consolidated executive view by pinning key repor
 
    ![](./Images/images/exercise-1/L2E1T4S3.png)
 
-1. Repeat the pinning process for additional visuals — this time, in the **Pin to dashboard** window, select **Existing dashboard (1)**, ensure **Executive Dashboard (2)** is selected, and click **Pin (3)**.
+1. Repeat the pinning process for additional visuals - this time, in the **Pin to dashboard** window, select **Existing dashboard (1)**, ensure **Executive Dashboard (2)** is selected, and click **Pin (3)**.
 
    ![](./Images/images/exercise-1/e1s15.png)
 
@@ -191,13 +190,13 @@ In this task, you will create a consolidated executive view by pinning key repor
 
    ![](./Images/images/exercise-1/e1s16.png)
 
-1. Rearrange and resize the tiles by dragging them, so the layout reads cleanly — place the single most important metric at the top-left, where the eye lands first.
+1. Rearrange and resize the tiles by dragging them, so the layout reads cleanly - place the single most important metric at the top-left, where the eye lands first.
 
    ![](./Images/images/exercise-1/e1s17.png)
 
 ## Task 5: Configure sharing (workspace roles, apps, links)
 
-In this task, you will review the three primary ways to share content in the Power BI Service — **workspace access** (roles for collaborators), **direct item sharing** (links and invitations for specific reports or dashboards), and **apps** (a packaged, read-only experience for broad audiences) — and understand when to use each.
+In this task, you will review the three primary ways to share content in the Power BI Service - **workspace access** (roles for collaborators), **direct item sharing** (links and invitations for specific reports or dashboards), and **apps** (a packaged, read-only experience for broad audiences) - and understand when to use each.
 
 1. In the Power BI Service, return to **PowerBI_<inject key="DeploymentID" enableCopy="false"/>** and review its contents.
 
@@ -209,10 +208,10 @@ In this task, you will review the three primary ways to share content in the Pow
 
 1. In the **Manage access** pane, review the four available workspace roles:
 
-   - **Admin** — full control, including managing workspace access and settings
-   - **Member** — can edit, publish, and share content
-   - **Contributor** — can create and edit content, but cannot manage access
-   - **Viewer** — can only view and interact with content.
+   - **Admin** - full control, including managing workspace access and settings
+   - **Member** - can edit, publish, and share content
+   - **Contributor** - can create and edit content, but cannot manage access
+   - **Viewer** - can only view and interact with content.
 
 1. On the **Manage Access** window, click on **+Add people or groups (1)** to add new users or service principals to your workspace.
 
@@ -220,7 +219,7 @@ In this task, you will review the three primary ways to share content in the Pow
 
 1. On the **+Add people or groups** window, search for the service principal using `https://aec-svc/` and select it from the search results.
 
-1. In the Add people pane, after selecting the service principle **(1)**, select the appropriate role from the drop down. Choose **Admin (2)** to grant administrative permissions, and then click **Add (3)** to confirm. Make sure that is listed on the **Manage access** window.
+1. In the Add people pane, after selecting the service principle **(1)**, select the appropriate role from the drop-down. Choose **Admin (2)** to grant administrative permissions, and then click **Add (3)** to confirm. Make sure that it is listed on the **Manage access** window.
 
      ![](./Images/images/exercise-1/L2E1T2S7.png)
 
@@ -234,13 +233,13 @@ In this task, you will review the three primary ways to share content in the Pow
 
 1. In the **Send link** dialog, review the available direct sharing options:
 
-   - **Sharing with specific people** — enter a name or email to send an invitation
-   - **Copy link** — generate a shareable link with configurable permissions
-   - **Link settings** — control whether recipients can share further or build content on the underlying data
+   - **Sharing with specific people** - enter a name or email to send an invitation
+   - **Copy link** - generate a shareable link with configurable permissions
+   - **Link settings** - control whether recipients can share further or build content on the underlying data
 
      ![](./Images/images/exercise-1/L2E1T5S7.png)
 
-1. Click the **link settings (gear/pencil) icon**, review the audience options — **People in your organization**, **People with existing access**, and **Specific people** — and the additional permissions checkboxes, then click **Apply**.
+1. Click the **link settings (gear/pencil) icon**, review the audience options - **People in your organization**, **People with existing access**, and **Specific people** - and the additional permissions checkboxes, then click **Apply**.
 
    ![](./Images/images/exercise-1/L2E1T5S8.png)
 
@@ -252,8 +251,8 @@ In this task, you will review the three primary ways to share content in the Pow
 
 1. On the **Setup** tab, review and configure the following:
 
-   - **App name (1)**: `Contoso Executive Insights`
-   - **Description (2)**: `Board-ready sales insights for the Contoso executive team.`
+   - **App name (1):** `Contoso Executive Insights`
+   - **Description (2):** `Board-ready sales insights for the Contoso executive team.`
    - Click **Next: Add content (3)**
 
      ![](./Images/images/exercise-1/e1s19.png)
@@ -266,7 +265,7 @@ In this task, you will review the three primary ways to share content in the Pow
 
    ![](./Images/images/exercise-1/e1s21.png)
 
-1. If your environment allows app publishing, click **Publish** and confirm. Once app is successfully published. Click **Go to app**.
+1. If your environment allows app publishing, click **Publish** and confirm. Once the app is successfully published. Click **Go to app**.
 
    ![](./Images/images/exercise-1/notepowerbi.png)
 
@@ -280,9 +279,9 @@ In this task, you will review the three primary ways to share content in the Pow
 
 In this task, you will configure the published semantic model to refresh on a schedule so that the report and dashboard always reflect current data without any manual steps.
 
-1. Navigate back to power bi home page.
+1. Navigate back to the Power BI home page.
 
-1. In the PowerBI workspace, locate the **StorePerformanceReport** semantic model.
+1. In the Power BI workspace, locate the **StorePerformanceReport** semantic model.
 
    ![](./Images/images/exercise-1/e1s23.png)
 
@@ -311,9 +310,9 @@ In this task, you will configure the published semantic model to refresh on a sc
 
 1. Expand the **Refresh** section.
 
-   - **Time zone (1)**: Select your local time zone
+   - **Time zone (1):** Select your local time zone
    - Toggle **Configure a refresh schedule** (Keep your data up to date) to **On (2)**.
-   - **Refresh frequency (3)**: Daily
+   - **Refresh frequency (3):** Daily
    - Click **Add another time** and set a refresh time, such as **8:00 AM (4)**
    - Enable the **Send refresh failure notifications** option so the dataset owner is notified when a refresh fails.
    - Click **Apply (5)**.
@@ -324,7 +323,7 @@ In this task, you will configure the published semantic model to refresh on a sc
 
    ![](./Images/images/exercise-1/e1s29.png)
 
-1. click the **More options (…) (1)** menu and open the **Refresh history (2)** for the semantic model and verify that the refresh completed successfully.
+1. Click the **More options (…) (1)** menu and open the **Refresh history (2)** for the semantic model and verify that the refresh completed successfully.
 
    ![](./Images/images/exercise-1/e1s30.png)
 
@@ -337,7 +336,7 @@ In this task, you will configure the published semantic model to refresh on a sc
 In this exercise, you have accomplished the following:
 
 - Opened and reviewed the existing report in Power BI Desktop
-- created workspace in the powerbi service
+- Created a workspace in the Power BI service
 - Published the report and its semantic model to the Power BI Service
 - Created an Executive Dashboard by pinning key report visuals
 - Reviewed workspace roles, direct sharing, and app publishing
